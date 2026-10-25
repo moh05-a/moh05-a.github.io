@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammad Ameerah — Software Engineer</title>
+<meta name="description" content="Mohammad Rami Ameerah — Software Engineer specializing in full-stack and backend development with .NET, React, TypeScript, PostgreSQL and AWS.">
+<meta name="theme-color" content="#07080f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mohammad Ameerah — Software Engineer">
+<meta property="og:description" content="Full-stack & backend engineer. .NET, React, TypeScript, PostgreSQL, AWS, LLM tooling.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236366f1'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammad Rami Ameerah",
+  "jobTitle": "Software Engineer",
+  "email": "mailto:mameerah42@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Amman", "addressCountry": "JO"},
+  "alumniOf": "Princess Sumaya University for Technology",
+  "sameAs": ["https://github.com/moh05-a", "https://linkedin.com/in/mohammad-ameerah"],
+  "knowsAbout": [".NET", "ASP.NET Core", "React", "TypeScript", "PostgreSQL", "Python", "AWS", "LLM integration"]
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">ma<span>.</span>dev</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#github">GitHub</a>
+    <a href="#contact" class="btn small">Hire me</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="pill"><span class="dot"></span> Open to internships &amp; junior roles</p>
+      <h1>Hi, I'm <span class="grad">Mohammad Ameerah</span></h1>
+      <h2 class="typing" aria-label="Software Engineer"><span id="typed"></span><span class="caret" aria-hidden="true">|</span></h2>
+      <p class="lead">I build reliable backends and polished full-stack products: REST APIs in
+        <b>ASP.NET Core</b> and <b>PostgreSQL</b>, responsive <b>React + TypeScript</b> interfaces, and
+        <b>AI features</b> that run on real data, shipped with <b>AWS</b> and CI/CD.</p>
+      <div class="cta">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="https://github.com/moh05-a" target="_blank" rel="noopener" class="btn ghost">GitHub ↗</a>
+        <a href="https://linkedin.com/in/mohammad-ameerah" target="_blank" rel="noopener" class="btn ghost">LinkedIn ↗</a>
+        <a href="resume.pdf" download class="btn ghost" id="cv" hidden>Download CV ↓</a>
+      </div>
+      <div class="stats">
+        <div><b data-count="6">0</b><span>Open-source projects</span></div>
+        <div><b data-count="2">0</b><span>AWS certifications</span></div>
+        <div><b data-count="40" data-suffix="%">0</b><span>Faster data processing</span></div>
+        <div><b data-count="2">0</b><span>Bilingual apps (EN / AR)</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll" aria-label="Scroll down">↓</a>
+  </section>
+
+  <section id="about" class="reveal">
+    <h3 class="sec"><i>01</i> About me</h3>
+    <div class="grid2">
+      <div class="about-text">
+        <p>I'm a Software Engineer based in <b>Amman, Jordan</b>, finishing my BSc in Computer Science at
+          <b>Princess Sumaya University for Technology (PSUT)</b> (expected 2027).</p>
+        <p>As a Software Engineering Intern at <b>Simplify9</b>, I build and test backend services and RESTful APIs with
+          .NET, .NET Core and Entity Framework. Outside work I build products for local problems:
+          a dental clinic OS, at-home nursing for seniors, and a greywater garden planner. Most of them are bilingual,
+          with full Arabic RTL support.</p>
+        <p>I care about clean data models, well-designed endpoints, honest documentation, and shipping software people can actually use.</p>
+        <div class="chips">
+          <span class="chip">📍 Amman, Jordan</span>
+          <span class="chip">🎓 BSc CS · PSUT · 2027</span>
+          <span class="chip">☁️ AWS Cloud &amp; AI Practitioner</span>
+          <span class="chip">🗣 Arabic (Native) · English (Advanced)</span>
+        </div>
+      </div>
+      <div class="card terminal">
+        <div class="tbar"><i></i><i></i><i></i><span>profile.py</span></div>
+<pre><code><span class="k">class</span> <span class="f">Engineer</span>:
+    name   = <span class="s">"Mohammad Ameerah"</span>
+    role   = <span class="s">"Full-Stack &amp; Backend"</span>
+    stack  = [<span class="s">".NET"</span>, <span class="s">"React"</span>, <span class="s">"TypeScript"</span>,
+              <span class="s">"PostgreSQL"</span>, <span class="s">"Python"</span>, <span class="s">"AWS"</span>]
+    certs  = [<span class="s">"AWS Cloud Practitioner"</span>,
+              <span class="s">"AWS AI Practitioner"</span>]
+    speaks = [<span class="s">"Arabic"</span>, <span class="s">"English"</span>]
+
+    <span class="k">def</span> <span class="f">open_to_work</span>(self):
+        <span class="k">return</span> <span class="n">True</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="reveal">
+    <h3 class="sec"><i>02</i> Experience &amp; education</h3>
+    <div class="timeline">
+      <article class="card tl">
+        <div class="tl-head">
+          <div><h4>Software Engineering Intern</h4><p class="muted">Simplify9 · Amman, Jordan · 3-month internship</p></div>
+          <span class="date">Jun 2026 – Present</span>
+        </div>
+        <ul>
+          <li>Developed and tested RESTful APIs and backend services using <b>.NET / .NET Core</b> and <b>Entity Framework</b>.</li>
+          <li>Applied data modeling, endpoint design, and <b>PostgreSQL</b> integration for data persistence.</li>
+          <li>Worked in a production codebase: code review, version control, and team engineering workflow.</li>
+          <li>Translated requirements into working backend functionality in collaboration with the team.</li>
+        </ul>
+        <div class="tags"><span>.NET Core</span><span>Entity Framework</span><span>PostgreSQL</span><span>REST</span><span>Git</span></div>
+      </article>
+      <article class="card tl">
+        <div class="tl-head">
+          <div><h4>BSc Computer Science</h4><p class="muted">Princess Sumaya University for Technology (PSUT)</p></div>
+          <span class="date">Expected 2027</span>
+        </div>
+        <p class="muted">Software engineering, OOP, data modeling, databases and machine learning fundamentals.</p>
+      </article>
+      <article class="card tl">
+        <div class="tl-head">
+          <div><h4>Certifications</h4><p class="muted">Amazon Web Services</p></div>
+        </div>
+        <div class="certs">
+          <div class="cert"><span class="badge">AWS</span><div><b>Certified Cloud Practitioner</b><p class="muted">2025</p></div></div>
+          <div class="cert"><span class="badge">AWS</span><div><b>Certified AI Practitioner</b><p class="muted">2026</p></div></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h3 class="sec"><i>03</i> Featured projects</h3>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    <div class="projects" id="project-grid"></div>
+
+    <h4 class="sub">Also built</h4>
+    <div class="mini">
+      <div class="card"><b>Data Engineering &amp; Analytics Pipeline</b> <span class="muted">· 2025</span>
+        <p class="muted">Pandas pipelines for cleaning and analysis plus PostgreSQL schemas and SQL queries, processing <b>~40% faster</b>.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>PostgreSQL</span></div></div>
+      <div class="card"><b>Cloud-Integrated Full-Stack Web App</b> <span class="muted">· 2026</span>
+        <p class="muted">React + Tailwind CSS app deployed on AWS with CI/CD and a Git-based workflow.</p>
+        <div class="tags"><span>React</span><span>Tailwind</span><span>AWS</span><span>CI/CD</span></div></div>
+    </div>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h3 class="sec"><i>04</i> Skills</h3>
+    <div class="skills" id="skills-grid"></div>
+  </section>
+
+  <section id="github" class="reveal">
+    <h3 class="sec"><i>05</i> On GitHub</h3>
+    <div class="card langs">
+      <div class="langs-head"><h4>Languages across my repositories</h4><span class="muted" id="langs-note"></span></div>
+      <div class="bar" id="lang-bar" role="img" aria-label="Share of code by language"></div>
+      <div class="legend" id="lang-legend"></div>
+    </div>
+    <div class="repos" id="repos"><p class="muted">Loading repositories…</p></div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <div class="card contact">
+      <h3>Let's build something great together.</h3>
+      <p class="muted">I'm open to internships, junior positions and interesting collaborations, and I usually reply within a day.</p>
+      <div class="cta center">
+        <a class="btn" href="mailto:mameerah42@gmail.com">✉ Email me</a>
+        <button class="btn ghost" id="copy" type="button">Copy email</button>
+        <a class="btn ghost" href="https://linkedin.com/in/mohammad-ameerah" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn ghost" href="https://github.com/moh05-a" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="mono muted">mameerah42@gmail.com</p>
+    </div>
+  </section>
+</main>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<footer>© <span id="year"></span> Mohammad Rami Ameerah · Built with HTML, CSS, JavaScript &amp; Python</footer>
+<script src="script.js"></script>
+</body>
+</html>

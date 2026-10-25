@@ -1,0 +1,143 @@
+{
+  "generated": "2026-10-25T11:16:01+00:00",
+  "repos": [
+    {
+      "name": "Wajihni-",
+      "html_url": "https://github.com/moh05-a/Wajihni-",
+      "homepage": null,
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "updated_at": "2026-10-25T08:30:19Z",
+      "languages": []
+    },
+    {
+      "name": "SeniorCare",
+      "html_url": "https://github.com/moh05-a/SeniorCare",
+      "homepage": null,
+      "description": "Getting to a clinic isn't always easy for older adults. SeniorCare brings the care to their front door: pick a service, choose a day and time, and a verified nurse shows up at\u2026",
+      "language": "TypeScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "updated_at": "2026-10-25T08:28:06Z",
+      "languages": [
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Shell"
+      ]
+    },
+    {
+      "name": "Ramadi-Cycle",
+      "html_url": "https://github.com/moh05-a/Ramadi-Cycle",
+      "homepage": null,
+      "description": "Shows a Jordanian household what its greywater can grow. Tell it about your home and what you want from your garden, in Arabic or English, and a local AI model designs a garden\u2026",
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "updated_at": "2026-10-24T15:03:30Z",
+      "languages": [
+        "Python",
+        "TypeScript",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "name": "TahonaOS",
+      "html_url": "https://github.com/moh05-a/TahonaOS",
+      "homepage": null,
+      "description": "Tahona is a dental clinic management system for independent clinics in Jordan and the wider MENA region. It handles patients, appointments, the dental chart, treatment plans,\u2026",
+      "language": "C#",
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "updated_at": "2026-10-18T08:03:48Z",
+      "languages": [
+        "C#",
+        "TypeScript",
+        "CSS",
+        "Shell",
+        "Dockerfile",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "bennayaOS",
+      "html_url": "https://github.com/moh05-a/bennayaOS",
+      "homepage": "https://bennaya-os.vercel.app",
+      "description": "a OS for contractors that manages payments clients and materials",
+      "language": "TypeScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "updated_at": "2026-10-08T11:32:49Z",
+      "languages": [
+        "TypeScript",
+        "C#",
+        "CSS",
+        "HTML",
+        "Dockerfile"
+      ]
+    },
+    {
+      "name": "UniSys",
+      "html_url": "https://github.com/moh05-a/UniSys",
+      "homepage": null,
+      "description": "UniSys - University management system (ASP.NET Core API + React frontend)",
+      "language": "C#",
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "updated_at": "2026-10-06T08:27:21Z",
+      "languages": [
+        "C#",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "name": "hos-trip-planner",
+      "html_url": "https://github.com/moh05-a/hos-trip-planner",
+      "homepage": "https://hos-trip-planner-seven.vercel.app",
+      "description": "A Django + React app that plans a truck trip under the FMCSA Hours of Service rules. You enter where the truck is, the pickup, the drop-off and how many hours of the 70-hour\u2026",
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "updated_at": "2026-10-05T17:23:18Z",
+      "languages": [
+        "Python",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Procfile"
+      ]
+    }
+  ],
+  "languages": {
+    "C#": 1644049,
+    "TypeScript": 1376321,
+    "Python": 235412,
+    "CSS": 110415,
+    "JavaScript": 74298,
+    "HTML": 20677,
+    "Shell": 5149,
+    "Dockerfile": 2579,
+    "Procfile": 84
+  }
+}
