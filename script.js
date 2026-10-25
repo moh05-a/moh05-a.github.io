@@ -113,11 +113,15 @@ document.querySelectorAll("main section[id]").forEach(s => spy.observe(s));
 
 const setMenu = open => {
   menu.classList.toggle("open", open);
+  header.classList.toggle("menu-open", open);
+  document.body.classList.toggle("menu-open", open);
   menuBtn.setAttribute("aria-expanded", open);
   menuBtn.textContent = open ? "Close" : "Menu";
 };
 menuBtn.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
 menu.addEventListener("click", e => e.target.closest("a") && setMenu(false));
+addEventListener("keydown", e => e.key === "Escape" && menu.classList.contains("open") && (setMenu(false), menuBtn.focus()));
+addEventListener("resize", () => innerWidth > 1000 && setMenu(false));
 
 // ---- Reveal on scroll ----
 const io = new IntersectionObserver(es => es.forEach(e => {
@@ -125,13 +129,12 @@ const io = new IntersectionObserver(es => es.forEach(e => {
 }), { threshold: .08 });
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-// ---- Contact: copy email, optional CV ----
+// ---- Contact: copy email ----
 const toast = msg => { const t = $("toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2000); };
 $("copy").addEventListener("click", async () => {
   try { await navigator.clipboard.writeText("mameerah42@gmail.com"); toast("Email copied"); }
   catch { toast("mameerah42@gmail.com"); }
 });
-fetch("resume.pdf", { method: "HEAD" }).then(r => { if (r.ok) $("cv").hidden = false; }).catch(() => {});
 
 // ---- GitHub: language bar + repo list ----
 // Fixed categorical order; color follows the language, never its rank on a given load.
@@ -144,7 +147,8 @@ const ago = iso => {
 
 async function loadGitHub() {
   let data = null;
-  try { const r = await fetch("repos.json"); if (r.ok) data = await r.json(); } catch {}
+  try { const r = await fetch("repos.json", { cache: "no-cache" }); if (r.ok) data = await r.json(); } catch {}
+  if (data?.resume) $("cv").hidden = false;  // build.py sets this when resume.pdf is in the repo
   if (!data) {
     try {
       const r = await fetch(`https://api.github.com/users/${USER}/repos?sort=updated&per_page=100`);
@@ -153,7 +157,7 @@ async function loadGitHub() {
   }
   // repos.json from build.py is {repos, languages}; the raw API is an array.
   let repos = Array.isArray(data) ? data : data?.repos || [];
-  repos = repos.filter(r => !r.fork && r.name.toLowerCase() !== USER.toLowerCase())
+  repos = repos.filter(r => !r.fork && ![USER, `${USER}.github.io`].includes(r.name.toLowerCase()))
     .sort((a, b) => !a.description - !b.description);  // empty repos last (stable sort keeps recency)
   let langs = data?.languages, unit = "bytes";
   if (!langs) {

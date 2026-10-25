@@ -57,7 +57,7 @@ def fetch():
         return
     repos, langs = [], Counter()
     for r in data:
-        if r["fork"] or r["name"].lower() == USER.lower():
+        if r["fork"] or r["name"].lower() in (USER.lower(), f"{USER.lower()}.github.io"):
             continue
         repo = {k: r.get(k) for k in KEEP}
         if not repo["description"]:
@@ -74,6 +74,7 @@ def fetch():
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "repos": repos,
         "languages": dict(langs.most_common()),  # bytes of code per language, all repos
+        "resume": (ROOT / "resume.pdf").exists(),  # shows the CV link on the site
     }
     (ROOT / "repos.json").write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"Wrote repos.json: {len(repos)} repos, {len(langs)} languages.")

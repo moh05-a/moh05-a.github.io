@@ -101,7 +101,6 @@ h1 em{color:var(--accent)}
 .work{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:1.5rem;padding:2.25rem 0 2.5rem;border-top:1px solid var(--rule);
   transition:opacity .35s}
 .work.hide{display:none}
-.work:first-child{border-top:0;padding-top:0}
 .work-idx{grid-column:span 1;font:400 .85rem var(--mono);color:var(--mu);padding-top:.6rem;transition:color .25s}
 .work-head{grid-column:span 4}
 .work-head h3{font:400 clamp(2rem,3.4vw,3rem)/1 var(--serif);letter-spacing:-.02em}
@@ -192,8 +191,10 @@ h1 em{color:var(--accent)}
 @media (max-width:1000px){
   .top-in{grid-template-columns:1fr auto}
   .nav{position:fixed;inset:4.25rem 0 auto;flex-direction:column;gap:0;padding:1rem var(--pad) 2rem;background:var(--bg);border-bottom:1px solid var(--rule);
-    transform:translateY(-110%);transition:transform .35s;z-index:-1}
-  .nav.open{transform:none}
+    transform:translateY(-110%);visibility:hidden;transition:transform .35s,visibility 0s .35s;z-index:-1}
+  .nav.open{transform:none;visibility:visible;transition:transform .35s}
+  .top.menu-open{background:var(--bg);backdrop-filter:none;border-color:var(--rule)}
+  body.menu-open{overflow:hidden}
   .nav a{font:400 2.2rem/1.3 var(--serif);color:var(--ink);padding:.2rem 0}
   .menu-btn{display:block}
   .facts{grid-template-columns:1fr 1fr}
